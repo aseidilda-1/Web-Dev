@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+
+sup {
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content-1 {
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    padding: 80px 16px 0 16px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.text {
+    color: #1f2328;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.free-trial {
+    margin-top: 40px;
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+.free-trial p {
+    color: #59636e;
+}
+
+.free-trial button {
+    margin-top: 20px;
+    padding: 16px 24px 16px 24px;
+    width: 205px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #1B1F23;
+    color: white;
+    cursor: pointer;
+}
+
+.free-trial button:hover {
+    background-color: #59636e;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 16px 16px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.22),
+      rgba(255, 255, 255, 0) 85%
+    ),
+    #1b1f23;
+}
+
+.info-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.info {
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.info h2 {
+    text-align: center;
+    margin: 48px 242.5px 48px 242.5px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-wrapper {
+    display: flex;
+    margin-bottom: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border: 1px solid #cacfd4;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #7f8387;
+    border-radius: 25px;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #59636e;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.card-link {
+    margin-top: 16px;
+}
+
+.card-link a {
+    text-decoration: none;
+    color: #1b1f23;
+    font-weight: 600;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.frame {
+    display: flex;
+    padding: 32px 8px 8px 8px;
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.price-card {
+    flex: auto;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #cacfd4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #d1d9e0, 0px 56px 112px 0px #25292e52;
+}
+
+.mode {
+    text-align: center;
+    padding: 24px 16px 16px 16px;
+}
+
+.mode h2 {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.mode p {
+    font-size: 14px;
+    color: #59636e;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.d-sign {
+    font-size: 20px;
+    vertical-align: 20px;
+    margin-right: -3px;
+    color: #59636e;
+}
+
+.per-month {
+    font-size: 16px;
+    vertical-align: 10px;
+    color: #59636e;
+}
+
+.cost {
+    font-size: 48px;
+    color: #1f2328;
+}
+
+.currency {
+    font-size: 24px;
+    color: #1f2328;
+}
+
+.buy-btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 24px 16px 24px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #cacfd4;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.white-btn {
+    background-color: white;
+    color: #1f2328;
+}
+
+.white-btn:hover {
+    border: 2px solid #1f2328;;
+}
+
+.black-btn {
+    background-color: #1b1f23;
+    color: white;
+}
+
+.black-btn:hover {
+    border: none;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.22),
+      rgba(255, 255, 255, 0) 85%
+    ),
+    #1b1f23;
+}
+
+.features {
+    background-color: #f6f8fa;
+    padding: 8px 16px 8px 16px;
+}
+
+.main-ul {
+    padding-top: 8px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.add-on-ul {
+    padding-bottom: 8px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.features ul li {
+    font-size: 14px;
+    font-weight: 700;
+    color: #59636e;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.features ul li:hover {
+    cursor: pointer;
+}
+
+.features ul li p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.features h4 {
+    font-size: 14px;
+    color: #0969da;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+#included {
+    color: #1f2328;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 0;
+}
+
+.frame-desc {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    margin: 0 0 10px 0;
+}
+
+.frame-3 {
+    display: flex;
+    padding: 32px 8px 8px 8px;
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.frame-3 p {
+    padding-bottom: 0;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-wrapper .buy-btn{
+  flex: 1 1 260px;
+  min-width: 260px;
+}
