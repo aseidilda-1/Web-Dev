@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>ToDo List</header>
+
+  <main>
+    <h1 class="title">ToDo List</h1>
+
+    <section class="card" aria-label="Todo app">
+      <form id="todoForm" autocomplete="off">
+        <input id="todoInput" type="text" placeholder="New Task">
+        <button class="btn-add" type="submit">Add</button>
+      </form>
+
+      <div class="list-wrap">
+        <ul id="todoList"></ul>
+        <div id="emptyState" class="empty">No tasks yet. Add one above 👆</div>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
