@@ -1,0 +1,4 @@
+.top { padding: 16px; border-bottom: 1px solid #eee; }
+.top h1 { margin: 0 0 4px; }
+.top p { margin: 0; color: #555; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 16px; }

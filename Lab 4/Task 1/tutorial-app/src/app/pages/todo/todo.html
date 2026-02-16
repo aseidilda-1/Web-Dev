@@ -1,0 +1,39 @@
+<section class="card">
+  <form class="row" (submit)="$event.preventDefault(); add()">
+    <input
+      class="input"
+      placeholder="Например: сделать лабу..."
+      [(ngModel)]="newText"
+      name="newText"
+    />
+    <button class="btn primary" type="button" (click)="add()">Add</button>
+  </form>
+
+  <div class="bar">
+    <div class="filters">
+      <button class="chip" [class.active]="filter==='all'" (click)="setFilter('all')">All</button>
+      <button class="chip" [class.active]="filter==='active'" (click)="setFilter('active')">Active</button>
+      <button class="chip" [class.active]="filter==='done'" (click)="setFilter('done')">Done</button>
+    </div>
+
+    <div class="info">
+      <span>{{ leftCount }} left</span>
+      <button *ngIf="hasDone">
+        Clear done
+      </button>
+    </div>
+  </div>
+
+  <p class="empty" *ngIf="visible.length === 0">Пока пусто 🙂</p>
+
+  <ul class="list" *ngIf="visible.length > 0">
+    <li class="item" *ngFor="let t of visible">
+      <label class="left">
+        <input type="checkbox" [checked]="t.done" (change)="toggle(t)" />
+        <span class="text" [class.done]="t.done">{{ t.text }}</span>
+      </label>
+
+      <button class="btn" type="button" (click)="remove(t.id)">Delete</button>
+    </li>
+  </ul>
+</section>
