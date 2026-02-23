@@ -1,0 +1,61 @@
+<article class="card">
+  <div class="media">
+    <img class="main-img" [src]="selectedImage" [alt]="product.name" loading="lazy" />
+
+    <div class="thumbs" *ngIf="product.images.length">
+      <button
+        class="thumb"
+        type="button"
+        *ngFor="let img of product.images"
+        (click)="setImage(img)"
+        [class.active]="img === selectedImage"
+        aria-label="Select image"
+      >
+        <img [src]="img" [alt]="product.name" loading="lazy" />
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3 class="title">{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+
+    <div class="meta">
+      <div class="price">
+        {{ product.price | number }} ₸
+      </div>
+
+      <div class="likes">
+        <button class="like-button" (click)="toggleLike()">
+          <span class="icon" aria-label="Likes">❤️</span>
+        </button>
+        <span class="count">{{ product.likes }}</span>
+      </div>
+
+      <div class="rating" title="Rating">
+        <span class="stars" aria-label="Rating stars">
+          <span *ngFor="let _ of [0,1,2,3,4]; let i = index"
+                [class.filled]="starFilled(i)">★</span>
+        </span>
+        <span class="badge">{{ product.rating }}</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn primary" (click)="openKaspi()">
+        Open on Kaspi
+      </button>
+
+      <div class="share">
+        <button type="button" class="btn" (click)="shareWhatsApp()">WhatsApp</button>
+        <button type="button" class="btn" (click)="shareTelegram()">Telegram</button>
+      </div>
+
+      <div class="delete">
+        <button type="button" class="btn danger" (click)="deleteProduct()">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</article>

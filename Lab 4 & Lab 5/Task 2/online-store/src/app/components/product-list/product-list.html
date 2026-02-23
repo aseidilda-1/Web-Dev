@@ -1,0 +1,55 @@
+<section class="page">
+  <header class="header">
+    <h1>Online Store</h1>
+    <p>Real Kaspi products. Share via WhatsApp/Telegram.</p>
+
+    <div class="search">
+      <input
+        class="search-input"
+        type="text"
+        placeholder="Search by product name..."
+        [(ngModel)]="searchTerm"
+      />
+
+      <button
+        class="search-clear"
+        type="button"
+        (click)="clearSearch()"
+        *ngIf="searchTerm.trim().length"
+        aria-label="Clear search"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div class="search-info" *ngIf="searchTerm.trim().length">
+      Found: <b>{{ filteredProducts.length }}</b>
+    </div>
+
+    <div class="filter">
+    <select 
+      class="category-select"
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()"
+    >
+      <option value="">All Categories</option>
+      <option value="1">Smartphones</option>
+      <option value="2">Laptops</option>
+      <option value="3">Headphones</option>
+      <option value="4">Tablets</option>
+    </select>
+</div>
+  </header>
+
+  <div class="empty" *ngIf="filteredProducts.length === 0">
+    No products found for “{{ searchTerm }}”
+  </div>
+
+  <div class="grid" *ngIf="filteredProducts.length > 0">
+    <app-product-card
+      *ngFor="let p of filteredProducts; trackBy: trackById"
+      [product]="p"
+      (remove)="deleteProduct($event)"
+    ></app-product-card>
+  </div>
+</section>
