@@ -41,6 +41,18 @@
 </div>
   </header>
 
+  <div class="favorites">
+    <h2> ⭐ Favorites ({{ favoriteProducts.length }})</h2>
+    <p *ngIf="favoriteProducts.length === 0">No favorite products yet.</p>
+    <div class="favorites-grid" *ngIf="favoriteProducts.length > 0">
+      <app-product-card
+        *ngFor="let p of favoriteProducts; trackBy: trackById"
+        [product]="p"
+        (remove)="removeFromFavorites(p.id)"
+      ></app-product-card>
+    </div>
+  </div>
+
   <div class="empty" *ngIf="filteredProducts.length === 0">
     No products found for “{{ searchTerm }}”
   </div>

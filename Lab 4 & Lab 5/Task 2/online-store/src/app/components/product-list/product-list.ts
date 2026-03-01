@@ -17,6 +17,7 @@ export class ProductListComponent implements OnInit {
 
   products: Product[] = [];
   searchTerm = '';
+  selectedCategory = '';
 
   constructor(private productService: ProductService) {}
 
@@ -33,6 +34,10 @@ export class ProductListComponent implements OnInit {
     );
   }
 
+  get favoriteProducts(): Product[] {
+    return this.products.filter(p => p.isLiked);
+  }
+
   trackById(_: number, p: Product): number {
     return p.id;
   }
@@ -45,7 +50,12 @@ export class ProductListComponent implements OnInit {
     this.products = this.products.filter(p => p.id !== id);
   }
 
-  selectedCategory = '';
+  removeFromFavorites(id: number): void {
+    const product = this.products.find(p => p.id === id);
+    if (product) {
+      product.isLiked = false;
+    }
+  }
 
   onCategoryChange(): void {
     if (!this.selectedCategory) {

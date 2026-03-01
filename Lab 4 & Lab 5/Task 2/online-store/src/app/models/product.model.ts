@@ -9,4 +9,5 @@ export interface Product {
   link: string;
   likes: number;
   categoryId: number;
+  isLiked?: boolean;
 }

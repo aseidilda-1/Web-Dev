@@ -1,0 +1,52 @@
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.photo-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+}
+
+.photo-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.photo-card p {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+button {
+  margin-top: 20px;
+  padding: 8px 14px;
+  border: none;
+  background-color: #6b7280;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4b5563;
+}

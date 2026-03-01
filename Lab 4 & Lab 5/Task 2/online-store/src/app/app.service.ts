@@ -28,8 +28,9 @@ export class ProductService {
             'https://picsum.photos/seed/iphone15pro-3/640/420',
         ],
         link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-256gb-chernyi-113138191/',
-        likes: 0,
-        categoryId: 1
+        likes: 1,
+        categoryId: 1,
+        isLiked: false
     },
     {
         id: 2,
@@ -45,7 +46,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/samsung-galaxy-s24-ultra-5g-12-gb-256-gb-chernyi-podarok-116004824/',
         likes: 0,
-        categoryId: 1
+        categoryId: 1,
+        isLiked: false
     },
     {
         id: 3,
@@ -60,8 +62,9 @@ export class ProductService {
             'https://picsum.photos/seed/iphone15pro-3/640/420',
         ],
         link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-256gb-chernyi-113138191/',
-        likes: 0,
-        categoryId: 1
+        likes: 2,
+        categoryId: 1,
+        isLiked: false
     },
     {
         id: 4,
@@ -77,7 +80,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-256gb-chernyi-113138191/',
         likes: 0,
-        categoryId: 1
+        categoryId: 1,
+        isLiked: false
     },
     {
         id: 5,
@@ -93,7 +97,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-256gb-chernyi-113138191/',
         likes: 0,
-        categoryId: 1
+        categoryId: 1,
+        isLiked: false
     },
     {
         id: 6,
@@ -108,8 +113,9 @@ export class ProductService {
             'https://picsum.photos/seed/mba-3/640/420',
         ],
         link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-2022-13-6-16-gb-ssd-512-gb-macos-z16100143-112025576/',
-        likes: 0,
-        categoryId: 2
+        likes: 3,
+        categoryId: 2,
+        isLiked: false
     },
     {
         id: 7,
@@ -125,7 +131,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/pryme-n5095-15-6-16-gb-ssd-512-gb-win-11-pro-fhk14bk25-133963600/?c=195220100',
         likes: 0,
-        categoryId: 2
+        categoryId: 2,
+        isLiked: false
     },
     {
         id: 8,
@@ -141,7 +148,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-2022-13-6-16-gb-ssd-512-gb-macos-z16100143-112025576/',
         likes: 0,
-        categoryId: 2
+        categoryId: 2,
+        isLiked: false
     },
     {
         id: 9,
@@ -156,8 +164,9 @@ export class ProductService {
             'https://picsum.photos/seed/samsungtv-3/640/420',
         ],
         link: 'https://kaspi.kz/shop/p/pryme-n5095-15-6-16-gb-ssd-512-gb-win-11-pro-fhk14bk25-133963600/?c=195220100',
-        likes: 0,
-        categoryId: 2
+        likes: 1,
+        categoryId: 2,
+        isLiked: false
     },
     {
         id: 10,
@@ -173,7 +182,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-2022-13-6-16-gb-ssd-512-gb-macos-z16100143-112025576/',
         likes: 0,
-        categoryId: 2
+        categoryId: 2,
+        isLiked: false
     },
     {
         id: 11,
@@ -189,7 +199,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/naushniki-sony-wh-1000xm5-serebristyi-105577599/',
         likes: 0,
-        categoryId: 3
+        categoryId: 3,
+        isLiked: false
     },
     {
         id: 12,
@@ -205,7 +216,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/portativnaja-kolonka-jbl-charge-5-belyi-102892121/',
         likes: 0,
-        categoryId: 3
+        categoryId: 3,
+        isLiked: false
     },
     {
         id: 13,
@@ -221,7 +233,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/naushniki-sony-wh-1000xm5-serebristyi-105577599/',
         likes: 0,
-        categoryId: 3
+        categoryId: 3,
+        isLiked: false
     },
     {
         id: 14,
@@ -237,7 +250,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/portativnaja-kolonka-jbl-charge-5-belyi-102892121/',
         likes: 0,
-        categoryId: 3
+        categoryId: 3,
+        isLiked: false
     },
     {
         id: 15,
@@ -253,7 +267,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/naushniki-sony-wh-1000xm5-serebristyi-105577599/',
         likes: 0,
-        categoryId: 3
+        categoryId: 3,
+        isLiked: false
     },
     {
         id: 16,
@@ -269,7 +284,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-ipad-a16-11-2025-wi-fi-11-djuim-6-gb-128-gb-serebristyi-138199634/?c=195220100',
         likes: 0,
-        categoryId: 4
+        categoryId: 4,
+        isLiked: false
     },
     {
         id: 17,
@@ -285,7 +301,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/xiaomi-redmi-pad-2-4g-11-djuim-8-gb-256-gb-seryi-140640417/?c=195220100',
         likes: 0,
-        categoryId: 4
+        categoryId: 4,
+        isLiked: false
     },
     {
         id: 18,
@@ -301,7 +318,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-ipad-a16-11-2025-wi-fi-11-djuim-6-gb-128-gb-serebristyi-138199634/?c=195220100',
         likes: 0,
-        categoryId: 4
+        categoryId: 4,
+        isLiked: false
     },
     {
         id: 19,
@@ -317,7 +335,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/xiaomi-redmi-pad-2-4g-11-djuim-8-gb-256-gb-seryi-140640417/?c=195220100',
         likes: 0,
-        categoryId: 4
+        categoryId: 4,
+        isLiked: false
     },
     {
         id: 20,
@@ -333,7 +352,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/apple-ipad-a16-11-2025-wi-fi-11-djuim-6-gb-128-gb-serebristyi-138199634/?c=195220100',
         likes: 0,
-        categoryId: 4
+        categoryId: 4,
+        isLiked: false
     },
   ];
 

@@ -43,7 +43,12 @@ export class ProductCardComponent implements OnChanges {
   }
 
   toggleLike(): void {
-    this.product.likes += 1;
+    this.product.isLiked = !this.product.isLiked;
+    if (this.product.isLiked) {
+      this.product.likes += 1;
+    } else {
+      this.product.likes -= 1;
+    }
   }
 
   deleteProduct(): void {

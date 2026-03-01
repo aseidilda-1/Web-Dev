@@ -1,0 +1,49 @@
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.album-card {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.album-card:hover {
+  transform: translateY(-2px);
+}
+
+.album-title {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #dc2626;
+}
