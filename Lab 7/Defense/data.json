@@ -1,0 +1,12 @@
+[
+    {
+        "task_id": 1,
+        "title": "Learn Python",
+        "completed": true
+    },
+    {
+        "task_id": 2,
+        "title": "Learn Django",
+        "completed": false
+    }
+]
