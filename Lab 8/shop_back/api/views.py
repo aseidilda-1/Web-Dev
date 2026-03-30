@@ -4,6 +4,16 @@ from .models import Product, Category
 
 def product_list(request):
     products = Product.objects.all()
+    categoty_id = request.GET.get('category')
+    active = request.GET.get('active')
+    search = request.GET.get('search')
+
+    if categoty_id:
+        products = products.filter(category=categoty_id)
+    if active is not None:
+        products = products.filter(is_active=active.lower() == 'true')
+    if search:
+        products = products.filter(name__icontains=search)
 
     data = []
     for product in products:
