@@ -2,9 +2,14 @@ from django.contrib import admin
 from .models import Product, Category
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price', 'count', 'is_active', 'category')
+    list_display = ('id', 'name', 'price', 'count', 'is_active', 'category')
     list_filter = ('is_active', 'category')
-    search_fields = ('name', 'description')
+    search_fields = ['name']
+    ordering = ['name']
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name')
+    search_fields = ['name']
 
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
